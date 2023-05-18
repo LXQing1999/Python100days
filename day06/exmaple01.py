@@ -18,6 +18,8 @@ print(list2)
 list3=[i**2 for i in range(1,10)]
 print(list3)
 
+# 索引和切片
+# 正向索引：0~N-1  负向索引：-N ~-1
 # 遍历列表中的元素
 for i in range(len(list1)):
     print(list1[i])
@@ -44,26 +46,3 @@ print(5 not in list4)
 print('apple' in list1)
 print('a' in list1)
 
-# 索引和切片
-# 正向索引：0~N-1  负向索引：-N ~-1
-
-# 合并
-list5=[1,3,5,7]
-list6=[4,4,8]
-longlist=list5+list6
-list5+=list6
-print(longlist)
-print(list5)
-
-# 比较 range([起，尾)，步长)
-list7=list(range(1,8,2))
-print(list7)
-list8=[1,3,5,7]
-print(list7==list8) # bool运算
-print(list7!=list8) # bool运算
-
-# 比较大小的时候是挨个比较的
-list9=[1,3,5,7,9]
-list10=[1,3,5,9]
-print(list9>list8) # bool运算
-print(list10>list8) # bool运算
