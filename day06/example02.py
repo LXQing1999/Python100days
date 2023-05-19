@@ -7,10 +7,11 @@ Date:2023/5/18
 list5=[1,3,5,7]
 list6=[4,4,8]
 longlist=list5+list6
-list5+=list6
 print(longlist)
+list5+=list6
 print(list5)
-
+list6.extend(list5)
+print(list6)
 # 比较 range([起，尾)，步长)
 list7=list(range(1,8,2))
 print(list7)

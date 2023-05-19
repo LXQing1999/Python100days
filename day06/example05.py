@@ -24,7 +24,11 @@ fruits.pop() # 弹出最后一个元素
 print(fruits)
 fruits.pop(1) # 删除的元素
 print(fruits)
-fruits.remove('apple') # 删除列表中，第一次出现的元素
+
+del fruits[0]
+print(fruits)
+while 'apple' in fruits:
+    fruits.remove('apple') # 删除列表中，第一次出现的元素
 print(fruits)
 
 # 清空列表元素
