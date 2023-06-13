@@ -16,11 +16,14 @@ except [ExceptionType]:
     # 异常处理代码
 如果[ExceptionType]没有指定，，则会捕捉所有类型的异常。
 
+将函数封装，实现函数的复用
 Author:25423
 Date:2023/6/5
 """
 
 import random
+# 传入自变量，返回因变量
+
 money=1000
 while money>0:
     print(f'玩家资产{money}元')
